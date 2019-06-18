@@ -47,13 +47,6 @@
 		</dependency>
 
 	</dependencies>
-	<repositories>
-		<repository>
-			<id>ddynamodb-local-mumbai</id>
-			<name>DynamoDB Local Release Repository</name>
-			<url>https://s3-us-west-2.amazonaws.com/dynamodb-local-mumbai/release</url>
-		</repository>
-	</repositories>
 	<dependencyManagement>
 		<dependencies>
 			<dependency>
