@@ -38,7 +38,7 @@ public class AWSConfiguration {
 		 */
 
 		AmazonDynamoDB client = AmazonDynamoDBClientBuilder.standard().withRegion(DynamoConstants.REGION)
-				.build();
+				.withCredentials(new AWSStaticCredentialsProvider(awsCreds)).build();
 		DynamoDBMapperConfig.Builder builder = new DynamoDBMapperConfig.Builder();
 		builder.setConversionSchema(ConversionSchemas.V2);
 		// builder.setTableNameOverride(new TableNameOverride("Movie"));
